@@ -57,6 +57,7 @@ class MovieAdapter(
 
     fun clearList() {
         data.clear()
+        notifyDataSetChanged()
     }
 
     class MoviesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
